@@ -1,0 +1,65 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:   # allows manual runs from the Actions tab
+
+jobs:
+  build:
+    name: Build Debug APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Create .env (from secrets / example)
+        run: |
+          # Uses GEMINI_API_KEY secret if you set one; otherwise falls back to .env.example
+          if [ -n "${{ secrets.GEMINI_API_KEY }}" ]; then
+            echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" > .env
+          else
+            cp .env.example .env
+            # Uncomment the key line so the secrets plugin doesn't complain
+            sed -i 's/# GEMINI_API_KEY=/GEMINI_API_KEY=/' .env || true
+          fi
+
+      - name: Create debug keystore
+        run: |
+          # The project expects rootDir/debug.keystore for the debug signingConfig
+          keytool -genkeypair \
+            -v \
+            -storetype PKCS12 \
+            -keystore debug.keystore \
+            -alias androiddebugkey \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass android \
+            -keypass android \
+            -dname "CN=Android Debug,O=Android,C=US"
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: TrekScape-debug
+          path: app/build/outputs/apk/debug/*.apk
+          retention-days: 14
