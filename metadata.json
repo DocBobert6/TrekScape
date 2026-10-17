@@ -1,0 +1,6 @@
+{
+  "name": "TrekScape",
+  "description": "A minimalist, gesture-driven mobile web browser built with Jetpack Compose and Android System WebView.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

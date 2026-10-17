@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">TrekScape</string>
+    <string name="launcher_label">TrekScape</string>
+
+    <!-- Navigation & Capsule -->
+    <string name="search_or_type_url">Search or type URL</string>
+    <string name="reload">Reload</string>
+    <string name="stop">Stop</string>
+    <string name="page_options">Page options</string>
+    <string name="security_secure">Connection is secure</string>
+    <string name="security_not_secure">Connection is not secure</string>
+    <string name="clear_input">Clear input</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="share">Share</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="tabs">Tabs</string>
+    <string name="new_tab">New Tab</string>
+    <string name="close_tab">Close tab</string>
+
+    <!-- Tabs & Groups -->
+    <string name="tab_overview">Tabs</string>
+    <string name="private_mode">Private</string>
+    <string name="close_all_tabs">Close All Tabs</string>
+    <string name="recently_closed">Recently Closed</string>
+    <string name="tab_groups">Tab Groups</string>
+    <string name="create_group">New Group</string>
+
+    <!-- Start Page -->
+    <string name="start_page_title">TrekScape</string>
+    <string name="start_page_tagline">Your window to the open web</string>
+    <string name="favorites">Favorites</string>
+    <string name="frequently_visited">Frequently Visited</string>
+    <string name="reading_list">Reading List</string>
+    <string name="privacy_report">Privacy Report</string>
+
+    <!-- Menu & Page Options -->
+    <string name="text_size">Text Size</string>
+    <string name="page_zoom">Page Zoom</string>
+    <string name="reader_view">Reader View</string>
+    <string name="desktop_site">Desktop Website</string>
+    <string name="website_settings">Website Settings</string>
+    <string name="find_on_page">Find on Page</string>
+    <string name="add_bookmark">Add Bookmark</string>
+    <string name="add_to_reading_list">Add to Reading List</string>
+    <string name="add_to_home_screen">Add to Home Screen</string>
+    <string name="print_save_pdf">Print / Save as PDF</string>
+    <string name="translate">Translate Page</string>
+
+    <!-- History, Bookmarks, Reading List -->
+    <string name="history">History</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_history_last_hour">Last hour</string>
+    <string name="clear_history_today">Today</string>
+    <string name="clear_history_all_time">All time</string>
+    <string name="no_history">No history yet</string>
+    <string name="no_bookmarks">No bookmarks saved</string>
+    <string name="no_reading_list">No articles in Reading List</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="search_suggestions">Search Suggestions</string>
+    <string name="appearance">Appearance</string>
+    <string name="dark_pages">Dark Pages</string>
+    <string name="https_only">HTTPS-Only Mode</string>
+    <string name="content_blocker">Content &amp; Tracker Blocker</string>
+    <string name="block_third_party_cookies">Block Third-Party Cookies</string>
+    <string name="set_as_default_browser">Set as Default Browser</string>
+    <string name="about_trekscape">About TrekScape</string>
+    <string name="downloads">Downloads</string>
+
+    <!-- Dialogs & Prompts -->
+    <string name="permission_camera_title">Camera Access</string>
+    <string name="permission_mic_title">Microphone Access</string>
+    <string name="permission_location_title">Location Access</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="certificate_warning_title">Security Certificate Warning</string>
+    <string name="certificate_warning_message">The security certificate for this site is not trusted. Continuing may put your sensitive data at risk.</string>
+    <string name="go_back_safety">Go Back to Safety</string>
+    <string name="proceed_anyway">Proceed Anyway (Unsafe)</string>
+
+    <!-- Errors -->
+    <string name="error_offline_title">You\'re Offline</string>
+    <string name="error_offline_desc">TrekScape cannot load the page because your device has no internet connection.</string>
+    <string name="error_dns_title">Site Cannot Be Reached</string>
+    <string name="error_dns_desc">TrekScape could not locate the server IP address for this domain.</string>
+    <string name="retry">Try Again</string>
+</resources>

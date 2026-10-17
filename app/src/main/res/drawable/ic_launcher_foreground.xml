@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer compass ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="3.5"
+        android:pathData="M54,27 C68.91,27 81,39.09 81,54 C81,68.91 68.91,81 54,81 C39.09,81 27,68.91 27,54 C27,39.09 39.09,27 54,27 Z" />
+
+    <!-- Cardinal tick marks -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M52.5,23 h3 v5 h-3 z M52.5,80 h3 v5 h-3 z M23,52.5 h5 v3 h-5 z M80,52.5 h5 v3 h-5 z" />
+
+    <!-- North Needle (Accent Blue / Cyan) -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M54,34 L62,54 L54,50 Z" />
+
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M54,34 L46,54 L54,50 Z" />
+
+    <!-- South Needle (Clean Silver / White) -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M54,74 L46,54 L54,50 Z" />
+
+    <path
+        android:fillColor="#94A3B8"
+        android:pathData="M54,74 L62,54 L54,50 Z" />
+
+    <!-- Center Pivot Pin -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,51 C55.66,51 57,52.34 57,54 C57,55.66 55.66,57 54,57 C52.34,57 51,55.66 51,54 C51,52.34 52.34,51 54,51 Z" />
+</vector>
